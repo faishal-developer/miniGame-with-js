@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/acc18e30fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- main section starts here -->
+    <main class="container">
+        <section class="start-game">
+            <button id="start-game">Start Game</button>
+        </section>
+        <section class="flex-box">
+            <!-- player 1 html -->
+            <div class="player1">
+                <div class="progress-bar">
+                    <div data-size="100" class="progress"></div>
+                </div>
+                <div>
+                    <input id='trigger1' class='trigger' type='radio' name='fire'>
+                    <span class='range'>
+                        <label class="gun" for='trigger1'>
+                            <i class="fas fa-fighter-jet"></i>
+                            <br>
+                            <b>P-1</b>
+                        </label>
+                        <output class='shot'> <i class="fas fa-arrow-right arrow"></i></output>
+                    </span>
+
+                    <input id='trigger2' class='trigger' type='radio' name='fire' checked>
+                    <span class='range'>
+                        <label class="gun" for='trigger2'>
+                            <i class="fas fa-fighter-jet"></i>
+                            <br>
+                            <b>P-1</b>
+                        </label>
+                        <output class='shot'>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </output>
+                    </span>
+                </div>
+                <div class="wins">
+                    <h2 id="player1Winned">Wins:</h2>
+                </div>
+            </div>
+            <!-- player 2 html -->
+            <div class="player2">
+                <div class="progress-bar">
+                    <div data-size="100" class="progress"></div>
+                </div>
+                <div class="gun-part">
+                    <input id='trigger3' class='trigger2' type='radio' name='fire'>
+                    <span class='range2'>
+                        <label class="gun2" for='trigger3'>
+                            <i class="fas fa-fighter-jet right-jet"></i>
+                            <br>
+                            <b>P-2</b>
+                        </label>
+                        <output class='shot2'> <i class="fas fa-arrow-left arrow"></i></output>
+                    </span>
+
+                    <input id='trigger4' class='trigger2' type='radio' name='fire' checked>
+                    <span class='range2'>
+                        <label class="gun2" for='trigger4'>
+                            <i class="fas fa-fighter-jet right-jet"></i>
+                            <br>
+                            <b>P-2</b>
+                        </label>
+                        <output class='shot2'>
+                            <span class="arrow"><i class="fas fa-arrow-left"></i></span>
+                        </output>
+                    </span>
+                </div>
+                <div class="wins">
+                    <h2 id="player2Winned">Wins:</h2>
+                </div>
+            </div>
+        </section>
+        <h2 id="winner">Final Winner:</h2>
+    </main>
+    <!-- main section end here -->
+
+
+    <!-- linking javascript file -->
+    <script src="index.js"></script>
+</body>
+
+</html>
